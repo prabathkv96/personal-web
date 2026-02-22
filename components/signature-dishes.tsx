@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { useState } from "react"
+import { BASE_URL } from "@/lib/utils"
 
 const dishes = [
   {
@@ -10,7 +11,7 @@ const dishes = [
     category: "Main Course",
     description:
       "Slow-cooked wagyu with a Sri Lankan spice rub, coconut sambol, and roasted root vegetables.",
-    image: "/images/dish-1.jpg",
+    image: `${BASE_URL}/images/dish-1.jpg`,
   },
   {
     id: 2,
@@ -18,7 +19,7 @@ const dishes = [
     category: "Starter",
     description:
       "Pan-seared scallops with a coconut and lemongrass beurre blanc, finished with curry leaf oil.",
-    image: "/images/dish-2.jpg",
+    image: `${BASE_URL}/images/dish-2.jpg`,
   },
   {
     id: 3,
@@ -26,7 +27,7 @@ const dishes = [
     category: "Dessert",
     description:
       "Dark chocolate sphere with Ceylon cinnamon dust, passion fruit coulis, and kithul treacle cream.",
-    image: "/images/dish-3.jpg",
+    image: `${BASE_URL}/images/dish-3.jpg`,
   },
   {
     id: 4,
@@ -34,7 +35,7 @@ const dishes = [
     category: "Starter",
     description:
       "Spiced terrine with tamarind chutney, pickled shallots, and toasted coconut roti crumble.",
-    image: "/images/dish-4.jpg",
+    image: `${BASE_URL}/images/dish-4.jpg`,
   },
 ]
 

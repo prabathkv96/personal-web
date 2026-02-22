@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { BASE_URL } from "@/lib/utils"
 
 const stats = [
   { value: "5+", label: "Years of Experience" },
@@ -26,7 +27,7 @@ export function About() {
           {/* Image */}
           <div className="relative aspect-[4/5] overflow-hidden">
             <Image
-              src="/images/chef-kitchen.jpg"
+              src={`${BASE_URL}/images/chef-kitchen.jpg`}
               alt="Chef Prabath Vitharana preparing a dish with precision"
               fill
               className="object-cover"

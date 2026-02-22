@@ -8,6 +8,13 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'prabathkv96.github.io',
+        pathname: '/personal-web/images/**',
+      },
+    ],
   },
 }
 

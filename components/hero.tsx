@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { BASE_URL } from "@/lib/utils"
 
 export function Hero() {
   return (
@@ -6,7 +7,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-chef.jpg"
+          src={`${BASE_URL}/images/hero-chef.jpg`}
           alt="Chef Prabath Vitharana in his kitchen"
           fill
           className="object-cover"
